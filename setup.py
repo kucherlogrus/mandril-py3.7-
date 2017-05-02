@@ -23,7 +23,7 @@ setup(
     long_description=long_description,
     license='Apache-2.0',
     keywords='mandrill email api',
-    url='git@bitbucket.org:hadrien/mandrill-api-python-maintained.git',
+    url='https://bitbucket.org/hadrien/mandrill-really-maintained',
     scripts=['scripts/mandrill', 'scripts/sendmail.mandrill'],
     py_modules=['mandrill'],
     install_requires=[
