@@ -36,5 +36,7 @@ Releasing
 * Upload to pypi repository::
 
    $ pip install .[releasing]
+   $ bumpversion patch ./VERSION --commit --tag --message 'Releasing {new_version}'
+   $ git push --tags
    $ python setup.py sdist
    $ twine upload dist/*
