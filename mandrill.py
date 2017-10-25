@@ -101,9 +101,8 @@ ERROR_MAP = {
     'Unknown_MetadataField': UnknownMetadataFieldError
 }
 
-logger = logging.getLogger('mandrill')
-logger.setLevel(logging.INFO)
-logger.addHandler(logging.StreamHandler(sys.stderr))
+logger = logging.getLogger(__name__)
+
 
 class Mandrill(object):
     def __init__(self, apikey=None, debug=False):
