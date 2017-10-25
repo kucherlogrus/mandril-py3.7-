@@ -26,3 +26,15 @@ The API client is comprehensive, but the CLI functionality is minimal at this ti
       mandrill setup
       mandrill ping -c10
       mandrill send -f from@example.com -t to@example.com -s "My Subject Line" < content.html
+
+
+Releasing
+=========
+
+* Install extra dependencies;
+* Create source distribution;
+* Upload to pypi repository::
+
+   $ pip install .[releasing]
+   $ python setup.py sdist
+   $ twine upload dist/*
